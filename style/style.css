@@ -96,13 +96,29 @@ main > section {
   margin-bottom: 20px;
   border-radius: 8px;
 }
-.features_card, .features_card_tittle{
+.features_card,
+.features_card_tittle {
   font-weight: 600;
   font-size: 1.25rem;
   margin: 0 0;
 }
 .features_card_description {
   font-weight: 300;
+}
+#experience_badge {
+  padding: 40px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: -80px;
+  margin-top: -100px;
+  border-radius: 8px;
+}
+#experience_year {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.features_architect_img img {
+  width: 100%;
 }
 /* Team design style */
 .team_img_container {
@@ -141,13 +157,13 @@ main > section {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.fact_name{
+.fact_name {
   font-size: 1.25rem;
   font-weight: 600;
   margin-top: 5px;
   margin-bottom: 10px;
 }
-.fact_description{
+.fact_description {
   max-width: 540px;
 }
 .sponsor_info {
@@ -160,16 +176,28 @@ main > section {
   grid-template-columns: repeat(5, 1fr);
   margin-bottom: 100px;
 }
-.our_sponsor_img img{
+.our_sponsor_img img {
   filter: grayscale(100%);
+}
+
+/* footer section design */
+footer {
+  padding: 50px;
+  background-color: bisque;
+}
+.section_description {
+  text-align: center;
 }
 /* Responsive media query */
 
 @media screen and (max-width: 576px) {
-  .display_flex {
+  .display_flex,
+  .Features {
     flex-direction: column;
   }
-  .team_img_container, .facts_container, .our_sponsor_img {
+  .team_img_container,
+  .facts_container,
+  .our_sponsor_img {
     /* width: 100%; */
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
@@ -181,7 +209,8 @@ main > section {
   .features_tittle {
     font-size: 2.5rem;
   }
-  .facts_container, .our_sponsor_img {
+  .facts_container,
+  .our_sponsor_img {
     margin-top: 50px;
     justify-items: center;
   }
@@ -192,7 +221,19 @@ main > section {
   .section_tittle {
     text-align: center;
   }
-  .fact_description{
+  .fact_description {
     text-align: center;
+  }
+  #experience_badge {
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+  }
+  #experience_year{
+    font-size: 1rem;
   }
 }

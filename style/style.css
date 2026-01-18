@@ -81,7 +81,30 @@ main > section {
 .banner_img {
   width: 100%;
 }
-/* Team and features related style */
+
+/* features section design */
+.Features {
+  gap: 100px;
+}
+#feature_design {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.features_card {
+  padding: 30px;
+  box-shadow: 0 30px 16px 0 rgba(127, 122, 122, 0.129);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.features_card, .features_card_tittle{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 0;
+}
+.features_card_description {
+  font-weight: 300;
+}
+/* Team design style */
 .team_img_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
